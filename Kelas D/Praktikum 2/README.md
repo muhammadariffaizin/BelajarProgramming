@@ -25,6 +25,7 @@ pada setiap N, akan diberikan A, B dan C.
 "Akhirnya makan" ketika permintaan klien terpenuhi 
 "Sial kelaparan" ketika tidak. (semua output tanpa tanda ") 
 #### Sample Input
+```c
 2 
 3 5 3 
 1 5 2 
@@ -34,15 +35,19 @@ pada setiap N, akan diberikan A, B dan C.
 1 5 2 
 2 9 3 
 1 5 1 
+```
 
 #### Sample Output
+```c
 Akhirnya makan 
 Sial kelaparan
+```
 
 #### Explanation 
 
 Testcase 1 
 awalnya tanah berbentuk seperti ini 
+```c
 0_ _ _ _ _ _ _ _ _ ... _ 
  0 1 2 3 4 5 6 7 9 ... 10^5 -1   
 lalu menjadi seperti ini 
@@ -53,10 +58,12 @@ lalu menjadi seperti ini
 1       
 0_                 ... _ 
  0 1 2 3 4 5 6 7 9 ... 10^5 -1 
+```
 karena ada tanah setinggi 5 dan sepanjang 3, Boboiboy bisa makan 
 
 Testcase 2 
 awalnya tanah berbentuk seperti ini 
+```c
 0_ _ _ _ _ _ _ _ _ ... _ 
  0 1 2 3 4 5 6 7 9 ... 10^5 - 1   
 lalu menjadi seperti ini 
@@ -68,6 +75,7 @@ lalu menjadi seperti ini
 1       
 0_                 ... _ 
  0 1 2 3 4 5 6 7 9 ... 10^5 - 1 
+```
 karena tidak ada tanah setinggi 5 dan sepanjang 3, Boboiboy kelaparan 
 
 #### Constraints 
