@@ -87,8 +87,8 @@ Output pada tiap test case berupa jarak minimal (bilangan desimal sampai 3 angka
 \-
 
 #### Constraints
-1 ≤ T ≤ 10000
-1 ≤ P ≤ 1000000000
+1 ≤ T ≤ 10000 \
+1 ≤ P ≤ 1000000000 \
 1 ≤ L ≤ 1000000000
 
 ## Find the Pattern
@@ -134,7 +134,7 @@ sesuai input, cek sample case
 cari sendiri patternnya :)
 
 #### Constraints
-1 ≤ A,B ≤ 10
+1 ≤ A,B ≤ 10 \
 1 ≤ N ≤ 100
 
 ## Ganjil Genap
@@ -177,7 +177,7 @@ Test case kedua :
 `(2+6)+(-1-5) = 2`
 
 #### Constraints
-1 ≤ T ≤ 20
+1 ≤ T ≤ 20 \
 1 ≤ N ≤ 2^63
 
 ## Kampina Ice Cream
@@ -268,5 +268,5 @@ Total B -> 10 km
 Total akhir -> Total A + Total B = 30 km
 
 #### Constraints
-1 ≤ X ≤ 10000
+1 ≤ X ≤ 10000 \
 1 ≤ a,b ≤ X
