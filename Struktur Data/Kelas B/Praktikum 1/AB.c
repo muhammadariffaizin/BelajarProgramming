@@ -1,91 +1,155 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
-#include <string.h>
+#include <stdio.h>
 
-typedef struct stackNode_t {
-    char data;
-    struct stackNode_t *next;
-} StackNode;
+typedef struct queueNode_t {
+    int data;
+    int barang;
+    struct queueNode_t *next;
+} QueueNode;
 
-typedef struct stack_t {
-    StackNode *_top;
+typedef struct queue_t {
+    QueueNode   *_front,
+                *_rear;
     unsigned _size;
-} Stack;
+} Queue;
 
-void stack_init(Stack *stack);
-bool stack_isEmpty(Stack *stack);
-void stack_push(Stack *stack, char value);
-void stack_pop(Stack *stack);
-char stack_top(Stack *stack);
-unsigned stack_size(Stack *stack);
+void queue_init(Queue *queue);
+bool queue_isEmpty(Queue *queue);
+void queue_push(Queue *queue, int value, int barang);
+void queue_pop(Queue *queue);
+int  queue_front(Queue *queue);
+int  queue_size(Queue *queue);
 
-void stack_init(Stack *stack)
+void queue_init(Queue *queue)
 {
-    stack->_size = 0;
-    stack->_top = NULL;
+    queue->_size = 0;
+    queue->_front = NULL;
+    queue->_rear = NULL;
 }
 
-bool stack_isEmpty(Stack *stack) {
-    return (stack->_top == NULL);
+bool queue_isEmpty(Queue *queue) {
+    return (queue->_front == NULL && queue->_rear == NULL);
 }
 
-void stack_push(Stack *stack, char value)
+void queue_push(Queue *queue, int value, int barang)
 {
-    StackNode *newNode = (StackNode*) malloc(sizeof(StackNode));
+    QueueNode *newNode = (QueueNode*) malloc(sizeof(QueueNode));
     if (newNode) {
-        stack->_size++;
-        if (stack_isEmpty(stack)) newNode->next = NULL;
-        else newNode->next = stack->_top;
-
+        queue->_size++;
         newNode->data = value;
-        stack->_top = newNode;
-    }
-}
+        newNode->barang = barang;
+        newNode->next = NULL;
 
-void stack_pop(Stack *stack)
-{
-    if (!stack_isEmpty(stack)) {
-        StackNode *temp = stack->_top;
-        stack->_top = stack->_top->next;
-        free(temp);
-        stack->_size--;
-    }
-}
-
-char stack_top(Stack *stack)
-{
-    if (!stack_isEmpty(stack))
-        return stack->_top->data;
-    return 0;
-}
-
-unsigned stack_size(Stack *stack) {
-    return stack->_size;
-}
-
-
-int main() {
-    char input[100];
-    int size;
-    gets(input);
-    size = strlen(input);
-
-    Stack Palindrome;
-    stack_init(&Palindrome);
-
-    for(int i=0; i<size; i++) {
-        if(size/2<(size+1)/2 && i == size/2) continue;
-        if(i<size/2) {
-            stack_push(&Palindrome, input[i]);
-        } else if (i+1>size/2) {
-            if(input[i]==stack_top(&Palindrome)) {
-                stack_pop(&Palindrome);
-            } else {
-                printf("mahal, eh bukan palindrom deh\n");
-                return 0;
-            }
+        if (queue_isEmpty(queue)) {
+            queue->_front = queue->_rear = newNode;
+        } else {
+            queue->_rear->next = newNode;
+            queue->_rear = newNode;
         }
     }
-    printf("palindrom\n");
+}
+
+void queue_pop(Queue *queue)
+{
+    if (!queue_isEmpty(queue)) {
+        QueueNode *temp = queue->_front;
+        queue->_front = queue->_front->next;
+        free(temp);
+
+        if (queue->_front == NULL)
+            queue->_rear = NULL;
+        queue->_size--;
+    }
+}
+
+int queue_front(Queue *queue)
+{
+    if (!queue_isEmpty(queue)) {
+        return (queue->_front->data);
+    }
+    return (int)0;
+}
+
+int queue_size(Queue *queue) {
+    return queue->_size;
+}
+
+float queue_rata(Queue *queue) {
+    QueueNode *temp = queue->_front;
+    float rata=0;
+    if(!queue_isEmpty(&queue)) {
+        while (temp!=NULL) {
+            rata += temp->data * temp->barang;
+            //printf("%d * %d = %d; rata : %.4f\n", temp->data, temp->barang, temp->data * temp->barang, rata);
+            temp=temp->next;
+        }
+        //printf("%.4f\n", rata / queue->_size);
+        return rata / queue->_size;
+    } else {return 0;}
+}
+
+int queue_jumlah(Queue *queue, int A) {
+    QueueNode *temp = queue->_front;
+    int jumlah=0;
+    int hitung=0;
+
+    while (temp!=NULL && hitung<A) {
+        jumlah += temp->data;
+        temp=temp->next;
+        hitung++;
+    }
+    return jumlah;
+}
+
+int queue_jumlah_barang(Queue *queue, int A) {
+    QueueNode *temp = queue->_front;
+    int jumlah_barang=0;
+    int hitung=0;
+
+    while(temp!=NULL && hitung<A) {
+        jumlah_barang+=temp->barang;
+        temp=temp->next;
+        hitung++;
+    }
+    return jumlah_barang;
+}
+
+int main(int argc, char const *argv[])
+{
+    int T;
+
+    Queue Antrian;
+
+    queue_init(&Antrian);
+
+    scanf("%d", &T);
+
+    for(int i=0; i<T; i++) {
+        int pilihan;
+        int X, Y;
+        int A;
+        scanf("%d", &pilihan);
+        switch (pilihan) {
+            case 1:
+                scanf("%d %d", &X, &Y);
+                queue_push(&Antrian, X, Y);
+                break;
+            case 2:
+                if(!queue_isEmpty(&Antrian)) {
+                    queue_pop(&Antrian);
+                } else {
+                    printf("Yah habis :(\n");
+                }
+                break;
+            case 3:
+                printf("Rata-rata : %.4f\n", queue_rata(&Antrian));
+                break;
+            case 4:
+                scanf("%d", &A);
+                printf("Harga Total : %d, Jumlah Total : %d\n", queue_jumlah(&Antrian, A), queue_jumlah_barang(&Antrian, A));
+                break;
+        }
+    }
     return 0;
 }
