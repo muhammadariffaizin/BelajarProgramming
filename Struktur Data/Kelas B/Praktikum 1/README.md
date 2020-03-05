@@ -1,4 +1,11 @@
 # Soal Praktikum 1
+### Special Thanks
+Terima kasih untuk semua yang telah membantu untuk menyelesaikan soal-soal ini.
+1. Jundullah Hanif Robbani (Easy - EZ)
+2. Muchamad Maroqi Abdul Jalil (Easy - EZ)
+3. Fiqey Indriati Eka Sari (Easy - EZ)
+4. Rahmad Setiya Budi (Cari Terkecil - CT)
+
 ## Daftar Isi
 - [Antre Belanja - AB](#antre-belanja)
 - [Cari Terkecil - CT](#cari-terkecil)
