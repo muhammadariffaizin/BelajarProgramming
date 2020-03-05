@@ -36,15 +36,7 @@ void stack_push(Stack *stack, int value)
         stack->_size++;
         newNode->data = value;
         if (stack_isEmpty(stack)) newNode->next = NULL;
-        else {
-//            if(stack->_top->data < value) {
-//                StackNode *temp = stack->_top;
-//                stack->_top = stack->_top->next;
-//                free(temp);
-//                stack->_size--;
-//            }
-            newNode->next = stack->_top;
-        }
+        else {newNode->next = stack->_top;}
 
         newNode->data = value;
         stack->_top = newNode;
