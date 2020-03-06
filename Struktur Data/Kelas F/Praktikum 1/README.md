@@ -1,3 +1,8 @@
+# Soal Praktikum 1 Kelas F
+## Special Thanks
+Terima kasih untuk semua yang telah membantu untuk menyelesaikan soal-soal ini.
+1. Salman Damai Alfariq (Soal, LNR, MBS, MBKK)
+
 ## Daftar Isi
 - [Brembo dan Lahan Baru - BLAND](#brembo-dan-lahan-baru)
 - [Brembo dan RNA Virus - BVIRUS](#brembo-dan-rna-virus)
