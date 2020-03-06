@@ -166,14 +166,14 @@ B = [b1,b2,b3,...,bn]
 
 Karena Mahmood merasa menumpuk stack terlalu mudah, maka ia meningkatkan kesulitan permainannya dengan memberi dirinya tantangan:
 
-Top dari kedua stack tersebut adalah elemen pertama \
-Mahmood hanya bisa mengambil (pop) salah satu top dari kedua stack di setiap langkah \
-Mahmood juga harus menghitung jumlah nilai elemen top yang ia ambil (pop) dari stack pada setiap langkah \
-Jumlah nilai elemen top yang sudah Mahmood kumpulkan tidak boleh melebihi sebuah nilai x yang telah ditentukan di awal \
-Skor akhir Mahmood adalah berapa kali ia melakukan pop terhadap stack tersebut \
+- Top dari kedua stack tersebut adalah elemen pertama 
+- Mahmood hanya bisa mengambil (pop) salah satu top dari kedua stack di setiap langkah 
+- Mahmood juga harus menghitung jumlah nilai elemen top yang ia ambil (pop) dari stack pada setiap langkah 
+- Jumlah nilai elemen top yang sudah Mahmood kumpulkan tidak boleh melebihi sebuah nilai x yang telah ditentukan di awal 
+- Skor akhir Mahmood adalah berapa kali ia melakukan pop terhadap stack tersebut 
 Dengan diberikan stack A dan B, serta sebuah integer x sebagai batas jumlah, bantulah Mahmood mendapatkan skor tertinggi.
 
-Catatan : Gunakan konsep stack, queue, dan dequeue, menggunakan array tetap sah selama mengikuti aturan stack, queue, dan dequeue dimana TIDAK MELAKUKAN TRAVERSAL ke elemen selain yang diketahui
+> Catatan : Gunakan konsep stack, queue, dan dequeue, menggunakan array tetap sah selama mengikuti aturan stack, queue, dan dequeue dimana TIDAK MELAKUKAN TRAVERSAL ke elemen selain yang diketahui
 
 #### Input Format
 Baris pertama adalah N banyak testcase
