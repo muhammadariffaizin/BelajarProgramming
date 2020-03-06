@@ -22,7 +22,11 @@ Brembo adalah seorang ahli botani dan programmer. Sebagai ahli botani, ia sangat
 
 Namun, untuk mewujudkannya, tentu Brembo harus mempunyai lahan. Ia lalu meminta bantuan kepada Ayahnya yang juga seorang petani agar bisa mendapatkan lahan. Ayahnya kemudian memberikan lahan sebanyak ∞ hektare yang tersusun secara horizontal.
 
-Ayahnya menginstruksikan Brembo untuk memasang pagar pada lahan tersebut. Beberapa lahan telah diberikan sebuah bilangan berbeda pi. Bilangan tersebut menunjukkan nilai produktivitas pada lahan ke-i. Untuk membeli pagar, Ayahnya memberikan kesempatan kepada Brembo untuk memilih lahan-lahan dalam interval p[a..b] yakni pa, pa+1, pa+2, ..., pb. Jika n adalah banyaknya lahan dari p[a..b], maka Brembo harus memilih lahan sedemikian hingga n > 1. Kemudian, dari lahan  yang dipilih, Brembo diharuskan untuk memilih dua lahan px dan py yang mana px dan py masing-masing adalah nilai produktivitas terbesar dan terbesar kedua. Uang untuk membeli pagar dihasilkan dari px xor py.
+![BLAND1](img/BLAND1.png)
+
+Ayahnya menginstruksikan Brembo untuk memasang pagar pada lahan tersebut. Beberapa lahan telah diberikan sebuah bilangan berbeda pi. Bilangan tersebut menunjukkan nilai produktivitas pada lahan ke-i. Untuk membeli pagar, Ayahnya memberikan kesempatan kepada Brembo untuk memilih lahan-lahan dalam interval p[a..b] yakni pa, pa+1, pa+2, ..., pb. Jika n adalah banyaknya lahan dari p[a..b], maka Brembo harus memilih lahan sedemikian hingga n > 1. Kemudian, dari lahan  yang dipilih, Brembo diharuskan untuk memilih dua lahan px dan py yang mana px dan py masing-masing adalah nilai produktivitas terbesar dan terbesar kedua. Uang untuk membeli pagar dihasilkan dari px **xor** py.
+
+![BLAND2](img/BLAND2.png)
 
 Brembo ingin membangun pagar pada lahan sebanyak mungkin. Jika Ayahnya hanya memberikan nilai produktivitas pada N buah lahan (N lahan pasti berdampingan), maka berapa banyak lahan yang bisa dibangun pagar?
 
@@ -59,23 +63,46 @@ Memory Limit	16 MB
 Kombinasikan penggunaan 4 struktur data sekaligus (stack, queue, priority queue, dynamic array/linked list) dalam soal ini. Masing-masing struktur data harus mempunyai kegunaan spesifik masing-masing. \
 Sekelompok ilmuwan dari Tece 19 Institute yang dipimpin oleh Brembo telah menemukan M buah virus yang sangat unik. Setelah diteliti lebih lanjut, ternyata komponen basa penyusun RNA (Ribonucleic Acid) dari virus-virus tersebut berbeda. Basa penyusunnya terdiri dari X, Y, A dan B. Masing-masing dapat membentuk pasangan basa dengan kemungkinan :
 
-Basa X hanya bisa berpasangan dengan basa Y. \
-Basa A hanya bisa berpasangan dengan basa B. \
+- Basa X hanya bisa berpasangan dengan basa Y. \
+- Basa A hanya bisa berpasangan dengan basa B. 
+
 Berikut adalah salah satu contoh sekuens RNA dari sebuah virus.
 
-Saat virus aktif, RNA tersebut dapat menekukkan dirinya untuk membuat pasangan basa sebanyak mungkin. Sekuens RNA di atas akan menghasilkan 5 pasang basa.
+![BVIRUS1](img/BVIRUS1.png)
 
-Brembo ingin semua M  virus untuk diteliti di sebuah fasilitas penelitian. Fasilitas tersebut mempunyai N buah ruang laboratorium dengan nomor 1 hingga N. Masing-masing laboratorium membutuhkan waktu selama ti  untuk mengidentifikasi satu pasang basa dari sebuah virus. Karena jumlah ruang lab. terbatas, semua virus bisa saja tidak dapat diidentifikasi secara bersamaan. Jika hal ini terjadi, apabila ada ruang lab. yang kosong (tidak sedang mengidentifikasi), maka virus selanjutnya akan diidentifikasi pada ruang lab. yang mempunyai nomor terkecil.
+Saat virus aktif, RNA tersebut akan melakukan suatu mekanisme untuk membuat pasangan basa sebanyak mungkin. Mekanismenya adalah : 
+- Suatu basa hanya dapat membuat pasangan pada basa lain apabila kedua basa letaknya berdampingan. 
+- Jika suatu basa ingin membentuk dengan pasangan basa lain yang letaknya tidak berdampingan, maka koneksi dapat dilakukan melalui pasangan basa lain yang telah aktif. 
+
+Sekuens RNA di atas dapat membentuk pasangan basa dengan cara : 
+
+- XY berdampingan, maka bisa membentuk pasangan.
+
+![BVIRUS2](img/BVIRUS2.png)
+
+- Kemudian AB berdampingan, maka bisa membentuk pasangan.
+
+![BVIRUS3](img/BVIRUS3.png)
+
+- XY (berwarna kuning) dapat berpasangan karena membentuk koneksi melalui AB yang sebelumnya telah aktif. Lalu AB (berwarna hijau) dapat berpasangan.
+
+![BVIRUS4](img/BVIRUS4.png)
+
+- Hingga pada akhirnya dapat membentuk 5 pasang basa.
+
+![BVIRUS5](img/BVIRUS5.png)
+
+Brembo ingin semua M  virus untuk diteliti di sebuah fasilitas penelitian. Fasilitas tersebut mempunyai N buah ruang laboratorium dengan nomor 1 hingga N. Masing-masing laboratorium membutuhkan waktu selama ti  untuk mengidentifikasi satu pasang basa dari sebuah virus. Karena jumlah ruang lab. terbatas, semua virus bisa saja tidak dapat diidentifikasi secara bersamaan. Jika hal ini terjadi, apabila ada ruang lab. yang kosong (tidak sedang mengidentifikasi), maka **virus selanjutnya akan diidentifikasi pada ruang lab. yang mempunyai nomor terkecil.**
 
 Sekuens RNA direpresentasikan sebagai string dengan kumpulan karakternya adalah basa penyusun RNA. Brembo memutuskan untuk membuat program untuk menghitung berapa total waktu yang dibutuhkan untuk mengidentifikasi M virus.
 
 #### Input Format
 Input dideskripsikan sebagai berikut.
 
-Baris pertama adalah N. \
-Baris kedua terdapat N bilangan ti.\
-Baris ketiga adalah M. \
-M baris berikutnya berisi sebuah string sekuens RNA. \
+- Baris pertama adalah N.
+- Baris kedua terdapat N bilangan ti.
+- Baris ketiga adalah M.
+- M baris berikutnya berisi sebuah string sekuens RNA. 
 Urutan sekuens RNA yang masuk berdasarkan urutan input. 
 
 #### Output Format
@@ -94,12 +121,6 @@ AB
 ```c
 10
 ```
-#### Explanation
-Sekuens pertama membentuk 3 pasang
-
-Sekuens kedua membentuk 5 pasang
-
-Sekuens ketiga membentuk 1 pasang
 
 #### Constraints
 1 ≤ ti ≤ 100 \
@@ -109,6 +130,8 @@ Panjang sekuens maks. 200 karakter.
 | Time Limit | Memory Limit |
 |---|:---|
 | 1 seconds	| 128 MB |
+
+![LNR](img/LNR.png)
 
 Pada suatu hari, rantai di kapal luffy tiba-tiba rusak. Saat ia ingin menyambung kembali rantainya, ternyata rantai-nya harus terpasang berurutan dari kecil ke besar dan anak rantainya tercampur dengan rantai yang lain. Bantu Luffy memasang rantai itu. Nb : Tidak boleh ada angka yang muncul lebih dari satu.
 
@@ -178,9 +201,15 @@ Untuk setiap testcase, outputkan skor Mahmood diikuti endline ('\n')
 #### Explanation
 Pada awalnya, stack Mahmood terlihat seperti ini
 
+![MBS1](img/MBS1.png)
+
 dengan x = 10, maka Mahmood hanya bisa melakukan pop sebanyak 4 kali tanpa membuat jumlahnya melebihi x
 
+![MBS2](img/MBS2.png)
+
 Mahmood hanya bisa melakukan pop sebanyak 4 kali pada elemen 4 2 2 1 dengan jumlah 4+2+2+1 = 9 agar tidak melebihi angka 10
+
+Contoh langkah pengambilan stack pada soal hanya salah satu contoh langkah, tidak terpaku pada urutan a-b-a-b, bisa a-a-b-b atau b-b-a-a 
 
 #### Constraints
 1 ≤ N ≤ 50 \
@@ -192,6 +221,8 @@ Mahmood hanya bisa melakukan pop sebanyak 4 kali pada elemen 4 2 2 1 dengan juml
 | Time Limit | Memory Limit |
 |---|:---|
 | 1 seconds	| 8 MB |
+
+![MDKK](img/MDKK.png)
 
 MudMud sangat menyayangi kakaknya. Suatu ketika MudMud ulang tahun dan diberi hadiah setumpuk roti yang dinomori dari 1-N (dari atas) oleh ibunya. Ibunya berhak memindah roti satu per satu dari tumpukan roti MudMud ke tumpukan kakaknya, atau dari tumpukan kakaknya ke tumpukan MudMud. MudMud harus memiliki jumlah yang sama dengan kakaknya. Jika roti yang dimiliki MudMud lebih sedikit dari yang dipunyai kakaknya, MudMud akan marah. Tapi jika roti yang dimiliki kakaknya lebih sedikit dari yang dipunyai MudMud, MudMud akan kasihan. Jika mereka berdua tidak diberi roti, maka MudMud akan sangat marah.
 
