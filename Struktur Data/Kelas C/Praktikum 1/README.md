@@ -169,16 +169,16 @@ Anda yang terkenal sebagai programmer hebat pun dimintai tolong oleh Phan untuk 
 Baris pertama berisi sebuah bilagan Q yang melambangkan query. 
 
 Q baris berikutnya berisi salah satu dari 2 buah query yang berbentuk 
-1. 1 K S S S ... S yang berarti terdapat sebuah lab yang baru mengirimkan data adminnya yang berjumlah K orang beserta nama-namanya. 
+1. 1 K S1 S2 S3 ... Sk yang berarti terdapat sebuah lab yang baru mengirimkan data adminnya yang berjumlah K orang beserta nama-namanya. 
 2. 2 A B yang berarti Phan ingin tau nama admin pada urutan ke-B yang dikirim oleh lab ke-A. 
 
 #### Format Keluaran 
 Untuk setiap query tipe 2, keluarkan nama admin seperti yang diminta atau keluarkan -1 apabila tidak ada. 
 
 #### Batasan 
-* 1 <= Q <= 10 
-* 1 <= |S| <= 10 
-* Jumlah K untuk seluruh Query tidak lebih dari 
+* 1 <= Q <= 10^5
+* 1 <= |Si| <= 10 
+* Jumlah K untuk seluruh Query tidak lebih dari 10
 * Pasti ada setidaknya 1 buah query tipe 2 
 
 #### Contoh Masukan 
@@ -196,6 +196,8 @@ Untuk setiap query tipe 2, keluarkan nama admin seperti yang diminta atau keluar
 
 #### Contoh Keluaran 
 ```c
-Hainnes -1 
-Leeta -1 
+Hainnes 
+-1 
+Leeta 
+-1 
 ```
