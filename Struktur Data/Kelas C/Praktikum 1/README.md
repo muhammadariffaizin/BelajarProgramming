@@ -6,8 +6,9 @@
 - [Nanti Kita Syukuran Hari Ini - NKSHI](#nanti-kita-syukuran-hari-ini)
 
 ## Genap Ganjil
-Time Limit 1 seconds
-Memory Limit 8 MB
+| Time Limit | Memory Limit |
+|---|:---|
+| 1 seconds	| 8 MB |
 Urutkan nomor-nomor yang diinputkan. Outputkan nomor-nomor genap yang diurutkan secara ascending diikuti oleh nomor-nomor ganjil yang diurutkan secara descending. 
 
 #### Input Format 
@@ -49,9 +50,9 @@ Setiap nomor yang telah diurutkan berdasarkan kriteria tersebut dioutputkan per 
 1 ≤ N ≤ 1000
 
 ## Nanti Kita Menyebrang Sungai Hari Ini
-
-Time Limit 1 seconds
-Memory Limit 64 MB
+| Time Limit | Memory Limit |
+|---|:---|
+| 1 seconds	| 64 MB |
 
 Terdapat sebuah sungai yang memisahkan dua ~~pasang kekasih~~ buah daratan. Satu-satunya cara untuk sampai dari daratan satu ke daratan yang lainnya adalah dengan menggunakan sebuah kapal. 
 
@@ -119,9 +120,9 @@ Keluarkan sebuah baris kosong diantara tiap testcase kecuali testcase terakhir.
 ```
 
 ## Nanti Kita Pikirkan Deskripsinya Kapan Kapan - NKPDKK
-
-Time Limit 1 seconds
-Memory Limit 64 MB
+| Time Limit | Memory Limit |
+|---|:---|
+| 1 seconds	| 64 MB |
 
 Diberikan sebuah array A berisi N buah bilangan. Tentukan total value dari setiap subarray sepanjang K dari array A. 
 
@@ -153,10 +154,10 @@ Sebuah baris berisi sebuah bilangan seperti yang dijelaskan di deskripsi
 ```
 
 ## Nanti Kita Syukuran Hari Ini
+| Time Limit | Memory Limit |
+|---|:---|
+| 3 seconds	| 64 MB | 
 
-Time Limit 3 seconds
-Memory Limit 64 MB
- 
 Rumah Phan hari ini kedatangan banyak tamu karena ia sedang menggelar syukuran karena ia diterima menjadi admin lab Kimia. Ia pun mengundang semua admin lab lain untuk datang ke rumahnya dan ia meminta setiap lab untuk mengirimkan nama dari admin-adminnya yang akan datang sebelum acara dimulai. 
 
 Ini ternyata justru menjadi masalah karena seperti orang-orang Indonesia pada umumnya, setiap lab justru terlambat mengirimkan daftar nama adminnya dan malah mengirimkannya ditengah-tengah acara. 
