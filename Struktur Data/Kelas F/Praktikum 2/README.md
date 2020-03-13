@@ -1,7 +1,7 @@
 # Soal Praktikum 2 Kelas F
 ## Daftar isi
 - [Brembo dan Lahan Baru 2 - BLAND2](#brembo-dan-lahan-baru-2)
-- [Brembo dan BST Lamp - BSTLAMP](#brembo-danbst-lamp)
+- [Brembo dan BST Lamp - BSTLAMP](#brembo-dan-bst-lamp)
 - [Luffy Menemukan Pohon Buah Setan - LMBS](#luffy-menemukan-pohon-buah-setan)
 - [Mahmood Terjebak di Penjara - MTDP](#mahmood-terjebak-di-penjara)
 - [Silsilah Keluarga MudMud - SKM](#silsilah-keluarga-mudmud)
@@ -80,15 +80,17 @@ Spesifikasi program yang dibutuhkan adalah sebagai berikut :
 ### Spesifikasi Program BST Lamp Controller
 #### Detail Program
 | Nama Program | BST Lamp Controller |
-| Jenis Antarmuka	| Command Line Interface |
+| --- | --- |
+| Jenis Antarmuka | Command Line Interface |
 | Versi | 1.0.0 |
+
 #### Overview
 
 ***BST Lamp Controller*** adalah program berbasisi CLI yang digunakan untuk melakukan pengontrolan dan virtualisasi terhadap alat controller yang terhubung dengan susunan suatu himpunan lampu yang disusun mengikuti aturan tertentu. Struktur lampu-lampu tersebut disusun sedemikan rupa membentuk struktur sebuah Binary Search Tree (BST) yang kemudian dinamakan **BST Lamp**.
 
 Tujuan dibentuknya struktur BST Lamp ini adalah untuk mengedukasi dan menunjukkan struktur Binary Search Tree agar menarik dan mudah untuk dipelajari. Berikut adalah contoh gambaran sederhana sebuah BST Lamp.
 
-![BSTLAMP](img/bstlamp.png)
+![BSTLAMP](img/BSTLAMP.png)
 
 #### Detail Lampu
 
