@@ -9,7 +9,7 @@
 ## Brembo dan Lahan Baru 2
 | Time Limit | Memory Limit |
 |---|:---|
-| 0.6 seconds	| 32 MB |
+| 0.3 seconds	| 32 MB |
 
 Setelah sukses sebagai petani, kini lahan Brembo telah berkembang pesat. Saat ini, ia memiliki lahan baru tak jauh dari tempat tinggalnya. Lahan baru Brembo berbentuk berbeda dari sebelumnya dengan luas ∞ hektare. Jika diilustrasikan, lahan baru Brembo berbentuk seperti gambar di bawah.
 
@@ -17,7 +17,24 @@ Setelah sukses sebagai petani, kini lahan Brembo telah berkembang pesat. Saat in
 
 _Satu kotak menggambarkan satu lahan_
 
-Brembo juga bekerja sebagai **Primary Botanist** di **Tece 19 Institute**. Disini, Brembo akan diberikan N daftar kerja dengan gajinya masing-masing (s_i). Ia diharuskan memilih setidaknya satu pekerjaan yang tersedia dari daftar. Jika ia memilih lebih dari satu pekerjaan, maka pekerjaan-pekerjaan tersebut haruslah berurutan dalam daftar. Selain itu, Brembo juga diberikan M kesempatan untuk mengubah gaji pekerjaan i (s_i). Diterapkan juga sistem asuransi dengan cara memotong sebanyak K dari gaji pada masing-masing pekerjaan yang telah dipilih.
+Brembo juga bekerja sebagai **Primary Botanist** di **Tece 19 Institute**. Disini, Brembo akan diberikan N daftar kerja dengan gajinya masing-masing (s_i). Ia diharuskan memilih setidaknya satu pekerjaan yang tersedia dari daftar. Jika ia memilih lebih dari satu pekerjaan, maka pekerjaan-pekerjaan tersebut haruslah berurutan dalam daftar. Selain itu, Brembo juga diberikan M kesempatan untuk mengubah gaji pekerjaan i (s_i). Diterapkan juga sistem asuransi dengan cara memotong sebanyak f(x) mod 10001 dari gaji pada masing-masing pekerjaan yang telah dipilih. Fungsi f(x) sendiri didapatkan dari :
+
+![Fungsi x](https://latex.codecogs.com/gif.latex?f%28x%29%20%3D%20%5Csum_%7Bk%3D1%7D%5E%7Bx%7D%20g%28k%29)
+
+Fungsi `g(k)` untuk setiap `k` dihitung dari aturan berikut :
+1. `s` bilangan bulat dengan nilai awal 1 dan bilangan bulat `p` dengan nilai awal `k`
+2. `i` bilangan bulat dimana 2 ≤ `i` ≤ `p`
+3. Dengan menggunakan perulangan, dimulai dari `i` = 2 hingga `i` ≤ `p` (bertambah 1). Jika `i` adalah bilangan prima, lakukan berikut :
+```
+temp = 1
+while p mod i is 0, then:
+    p=p/i
+    temp = temp + 1
+s = s * temp
+```
+4. Langkah 3 berakhir ketika kondisi tidak memenuhi perulangan
+
+Kemudian, cek nilai `s` ganjil atau genap. Jika ganjil, ubah `g(k)` = `k` sebaliknya jika genap, ubah `g(k)` = 0.
 
 Brembo ingin memasang pagar pada lahan barunya menggunakan gaji pertama hasil bekerja di perusahaan tersebut. Sama seperti lahan sebelumnya, ia hanya mau menggunakan jumlah pagar seminimum mungkin. Untuk itulah, Brembo telah membuat sebanyak Q skenario perhitungan. Terdapat dua jenis skenario, meliputi :
 1. Menggunakan hak untuk mengubah gaji pada pekerjaan ke-i (s_i), atau
@@ -26,11 +43,11 @@ Untuk mempermudah perhitungan, ia memutuskan untuk membuat program sederhana unt
 > Challenge: Kerjakan soal ini tanpa menggunakan alokasi dinamis/heap.
 
 #### Format Input
-Baris pertama terdapat bilangan N,M dan K. Masing-masing adalah banyaknya daftar pekerjaan, banyaknya kesempatan untuk mengubah gaji dan biaya asuransi. Pada baris kedua, terdapat bilangan s_1,s_2,s_3,…,s_N yang menyatakan gaji untuk masing-masing pekerjaan (dipisahkan spasi). Baris ketiga adalah Q, jumlah skenario.
+Baris pertama terdapat bilangan N,M dan x. Masing-masing adalah banyaknya daftar pekerjaan, banyaknya kesempatan untuk mengubah gaji dan biaya asuransi `f(x)`. Pada baris kedua, terdapat bilangan s<sub>1</sub>,s<sub>2</sub>,s<sub>3</sub>,…,s<sub>N</sub> yang menyatakan gaji untuk masing-masing pekerjaan (dipisahkan spasi). Baris ketiga adalah Q, jumlah skenario.
 
 Q baris berikutnya adalah deskripsi skenario. Masing-masing formatnya dapat berupa :
-* 1 i X, yakni mengubah gaji pekerjaan ke-i (s_i) 1≤i≤N dengan nilai X.
-* 2 i j, yakni menghitung berapa maksimum lahan yang bisa dibangun pagar sesuai pada deskripsi (1≤i≤j≤N).
+* `1 i X`, yakni mengubah gaji pekerjaan ke-i (s<sub>i</sub>) 1≤`i`≤`N` dengan nilai `X`.
+* `2 i j`, yakni menghitung berapa maksimum lahan yang bisa dibangun pagar sesuai pada deskripsi (1≤`i`≤`j`≤`N`).
 
 #### Format Output
 Pada masing-masing skenario, cetak output berupa string “Kasus #x: ” dimana x adalah skenario ke-x dimulai dari 1 kemudian diikuti dengan  :
@@ -51,11 +68,11 @@ Pada masing-masing skenario, cetak output berupa string “Kasus #x: ” dimana 
 
 #### Contoh Output
 ```c
-Kasus #1: 2
+Kasus #1: 4
 Kasus #2: ok
-Kasus #3: 4
+Kasus #3: 6
 Kasus #4: gagal
-Kasus #5: 7
+Kasus #5: 11
 ```
 
 ##### Batasan
@@ -69,7 +86,7 @@ Kasus #5: 7
 ## Brembo dan BST Lamp
 | Time Limit | Memory Limit |
 |---|:---|
-| 0.2 seconds	| 4 MB |
+| 1 seconds	| 1536 MB |
 
 Saat ini Brembo diminta untuk membuat sebuah aplikasi berbasis CLI oleh **Tece 19 Institute**. Teknisi senior dalam Tece 19 Institute sedang mengembangkan suatu metode yang menarik untuk memperkenalkan struktur data _Binary Search Tree_. Metodenya adalah dengan membuat struktur perangkat terdiri dari benda/objek yang kemudian disusun sesuai aturan _Binary Search Tree_.
 
@@ -90,7 +107,7 @@ Spesifikasi program yang dibutuhkan adalah sebagai berikut :
 
 Tujuan dibentuknya struktur BST Lamp ini adalah untuk mengedukasi dan menunjukkan struktur Binary Search Tree agar menarik dan mudah untuk dipelajari. Berikut adalah contoh gambaran sederhana sebuah BST Lamp.
 
-![BSTLAMP](img/BSTLAMP.png)
+![](img/bstlamp.png)
 
 #### Detail Lampu
 
@@ -99,6 +116,7 @@ Sebuah lampu pada BST Lamp mempunyai komponen-komponen sebagai berikut:
 - Bilangan bulat positif, yang digunakan untu membedakan lampu satu dengan lampu lainnya dan menandakan kebutuhan daya untuk lampu tersebut.
 - Dua buah port yang mempunyai kabel pada masing-masing portnya dapat diekstensi (disambungkan) menuju lampu lain.
 - Satu buah port yang digunakan untuk menerima ekstensi kabel dari kabel lain.
+- Daya listrik dialirkan dari lampu paling atas, sehingga lampu-lampu di bawahnya hanya akan menyala apabila lampu di atasnya dipastikan tidak rusak/dapat mengalirkan listrik.
 
 BST Lamp ini hanya bisa mengakomodasi lampu-lampu yang unik (tidak ada duplikasi).
 
@@ -170,7 +188,7 @@ Perintah-perintah (command) dapat mulai diinputkan dibaris setelah itu.
         Digunakan untuk melihat status untuk dua poin selanjutnya sekaligus. Hasil dari `--longestCable` diikuti `--cableCount`.
     + **`--longestCable`**
         
-        Digunakan untuk menghitung total kabel terpanjang yang terpasang (dihitung dari tempat lampu paling atas) hingga lampu terbawah.
+        Digunakan untuk menghitung panjang dari kabel terpanjang yang terpasang (dihitung dari tempat lampu paling atas) hingga lampu terbawah.
     + **`--cableCount`**
         
         Digunakan untuk menghitung banyaknya kabel yang terkoneksi sekarang.
@@ -245,7 +263,7 @@ Perintah-perintah (command) dapat mulai diinputkan dibaris setelah itu.
 
     Perintah **`-- totalPower <arg>`**
     ```
-    >> Lamp with total of <X> are <A> dan <B>
+    >> Lamp with total of <X> are <A> and <B>
 
     ```
     > `<X>`, `<A>`, dan `<B>` masing-masing adalah bilangan bulat sesuai pada deskripsi perintah.
@@ -304,7 +322,7 @@ Selain daftar perintah di atas, program juga dapat menangani error ketika user s
         Ketika argumen tidak disertakan, maka akan mencetak pesan error:
 
         ```
-        >> Error: argument required -> <lamp_power>
+        >> Error: argument required -> [lamp_power]
             
             install <lamp_power>
 
@@ -321,7 +339,7 @@ Selain daftar perintah di atas, program juga dapat menangani error ketika user s
 
         Ketika memasukkan perintah tanpa argumen, maka akan mencetak pesan error:
         ```
-        >> Error: argument requires -> [options]
+        >> Error: argument required -> [options]
         >> You can try one of the following options:
 
             analyze --brokenLamp <args...>
@@ -357,5 +375,172 @@ Brembo harus bisa membuat program CLI sesuai dengan dokumen spesifikasi tersebut
 > Note : Dalam soal ini anda tidak akan diberikan contoh input, output dan penjelasan. Anda harus mengandalkan dokumen spesifikasi yang diberikan untuk membuat program.
 
 ## Luffy Menemukan Pohon Buah Setan
+| Time Limit | Memory Limit |
+|---|:---|
+| 1 seconds	| 31 MB |
+
+![LMBS](img/LMBS.png)
+
+Luffy menemukan pohon buah setan!!! Untuk mempersiapkan melawan Kaido, Luffy membutuhkan banyak buah setan untuk memperkuat armadanya sebelum peperangan besar melawan Beast Pirates. Tetapi penjaga pohon itu memberikan beberapa syarat dan command agar Luffy bisa mengambil buahnya, diantaranya :
+- Dengan command 'inorder' diharuskan menyebutkan buah secara inorder
+- Dengan command 'postorder' diharuskan menyebutkan buah secara postorder
+- Dengan command 'preorder' diharuskan menyebutkan buah secara preorder
+- Dengan syarat 'genap' menyebutkan buah dengan angka genap
+- Dengan syarat 'ganjil' menyebutkan buah dengan angka ganjil
+- Dengan syarat 'prima' menyebutkan buah dengan angka prima
+- Dengan syarat 'semua' menyebutkan semua buah
+
+Karena Luffy harus bergegas melawan Beast Pirates, maka bantulah ia agar bisa menang melawan Beast Pirates.
+
+#### Input Format
+Beberapa angka sampai bertemu -1. Lalu sebuah baris angka n yang merupakan jumlah baris command dan syarat akan
+dimasukkan. Lalu n baris syarat dan command.
+
+#### Output Format
+Keluaran sesuai dengan command dan syarat
+
+#### Sample Input
+```c
+1
+4
+5
+6
+3
+2
+4
+2
+3
+-1
+3
+inorder genap
+postorder genap
+preorder prima
+```
+
+#### Sample Output
+```c
+Command : #1
+2
+4
+6
+Command : #2
+2
+6
+4
+Command : #3
+3
+2
+5
+```
+
+#### Constraints
+Semua angka berada dalam range integer
+
 ## Mahmood Terjebak di Penjara
+| Time Limit | Memory Limit |
+|---|:---|
+| 1 seconds	| 32 MB |
+
+![MTDP](img/MTDP.png)
+
+Sungguh malang nasib Mahmood kali ini. Dia terjebak di dalam sebuah penjara yang sangat luas. Dia menangis ketakutan dan ingin segera keluar dari penjara tersebut.
+
+Penjara tersebut mempunyai bentuk dan struktur yang tersusun mirip seperti Binary Search Tree. Terdapat N sel yang mana setiap sel diberi nomor tertentu dan terdapat jalur yang menghubungkan ke satu atau dua sel lain di bawahnya. Salah satu sel dari N sel tersebut berperan sebagai sel root.
+
+Mahmood ingin segera keluar dari penjara tersebut karena ia trauma akan suasana penjara. Ia mengetahui bahwa pintu keluar dari penjara tersebut terletak pada semua sel paling bawah (sel leaf). Namun masalahnya adalah jarak dari satu sel menuju sel lain berbeda-beda. 
+
+Berbekal dengan peta penjara yang ia punya, dapatkah kamu membantu Mahmood untuk keluar dari penjara melalui pintu keluar terdekat?
+
+Gambar berikut menunjukkan peta penjara dari contoh input.
+
+#### Input Format
+Input baris pertama adalah N, yang menunjukkan banyaknya sel. Kemudian, baris kedua terdapat bilangan M yang merupakan nomor sel root. N-1 baris selanjutnya berisi dua bilangan ai dan si. 
+* ai merupakan nomor sel.
+* bi merupakan jarak sel ai menuju sel parent-nya.
+
+Struktur BST dibentuk berdasarkan urutan input.
+
+Setelah itu terdapat Q, yang merupakan banyaknya kasus uji. Q baris selanjutnya terdapat satu bilangan yang menandakan
+nomor sel dimana brembo saat ini berada.
+
+#### Output Format
+Terdapat Q baris bilangan yang merupakan jarak menuju pintu keluar terdekat yang ditempuh Mahmood untuk keluar dari
+penjara.
+
+#### Sample Input
+```c
+8
+14
+5 2
+10 11
+4 6
+18 1
+15 2
+20 1
+25 5
+4
+14
+4
+5
+15
+```
+
+#### Sample Output
+```c
+3
+0
+5
+0
+```
+
+#### Constraints
+1 ≤ N ≤ 10^5 \
+1 ≤ Q ≤ 10^5 \
+Nilai ai dijamin berbeda (unik)
+
 ## Silsilah Keluarga MudMud
+| Time Limit | Memory Limit |
+|---|:---|
+| 1 seconds	| 8 MB |
+
+![SKM](img/SKM.png)
+
+MudMud mempunyai keluarga yang sangat besar, dia sedang kebingungan tentang silsilah keluarganya. Dia tidak bisa tahu mana anak dan mana ibunya. Bantu ia menemukan mana anak dan mana orangtua dari keluarga besanya
+
+#### Input Format
+Baris pertama berisi sebuah bilangan Q yang merupakan banyak query
+
+Q baris berikutnya berisi salah satu dari 2 tipe query berikut:
+
+* "1 K" berarti bilangan K dimasukkan ke dalam BST
+* "2 S X" jika S adalah pernyataan yang seperti dijelaskan di deskripsi. X pasti ada di dalam BST
+
+#### Output Format
+Untuk setiap query tipe 2:
+
+Jika S adalah "anaK" keluarkan child dari node dipisahkan dengan spasi "A B", A adalah anak kiri dan B adalah anak kanan. Jika salah satu tidak ada keluarkan "-". Jika sama sekali tidak memiliki anak berhenti memproses dan keluarkan "diManakah Anak-aNakkuu :(".
+
+Jika S adalah "ibU" keluarkan parent dari node, jika node adalah root keluarkan "Aku adalaH sesepuH"
+
+#### Sample Input
+```c
+7
+1 2
+1 1
+2 anaK 2
+1 3
+2 ibU 1
+2 anaK 2
+2 anaK 1
+```
+
+Sample Output
+```c
+1 -
+2
+1 3
+diManakah Anak-aNakkuu :(
+```
+
+#### Constraints
+1 ≤ Q, K ≤ 100
