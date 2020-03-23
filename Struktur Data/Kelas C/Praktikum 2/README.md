@@ -6,9 +6,9 @@
 - [Tinggal Copas Aja II - TCA2](#tinggal-copas-aja-ii)
 
 ## Ayah dan Anak
-
-Time Limit 1 seconds
-Memory Limit 64 MB
+| Time Limit | Memory Limit |
+|---|---|
+| 1 seconds | 64 MB |
 
 Phan sedang mempelajari tentang Binary Search Tree tetapi ia masih sering tertukar Antara parent dan child. Bantulah phan mengidentifikasi mana parent dan mana child dari suatu node pada sebuah BST 
 
@@ -47,9 +47,9 @@ NULL NULL
 1 ≤ K ≤ 10^5
 
 ## Mainan Ardi
-
-Time Limit 1 seconds
-Memory Limit 64 MB
+| Time Limit | Memory Limit |
+|---|---|
+| 1 seconds | 64 MB |
 
 Ardi memiliki N buah mainan. Setiap mainannya diletakkan dalam setiap kotak yang diberi nomor 1 sampai N yang dia susun dari kiri ke kanan. Setiap kali ia ingin bermain bersama temantemannya, ardi akan memilih mainan yang berada di Antara kotak L sampai R yang memiliki harga tertinggi.
  
@@ -89,9 +89,9 @@ Untuk setiap query tipe 2, keluarkan sebuah bilangan yang merupakan harga maksim
 1 ≤ L ≤ R ≤ 10^5
 
 ## Depth Pohon
-
-Time Limit 1 seconds
-Memory Limit 64 MB
+| Time Limit | Memory Limit |
+|---|---|
+| 1 seconds | 64 MB |
 
 Diberikan sebuah Binary Search Tree, tentukan jumlah dari kedalaman 2 node dengan kedalaman terbesar pada tree tersebut tersebut setiap kali sebuah data dimasukkan.
  
@@ -131,9 +131,10 @@ Keluarkan Q baris bilangan dimana baris ke-i merupakan jumlah dari kedalaman 2 n
 1 ≤ X ≤ 10^5
 
 ## Tinggal Copas Aja II
+| Time Limit | Memory Limit |
+|---|---|
+| 1 seconds | 64 MB |
 
-Time Limit 1 seconds
-Memory Limit 64 MB
 Phan saat ini sedang belajar tentang Binary Search Tree. Lalu ia menemukan artikel tentang metode traversal pada sebuah BST yaitu PreOrder Traversal,PostOrder Traversal dan InOrder Traversal. Karena penasaran, ia pun mencoba membuat program untuk mengetahui urutan ke-x untuk suatu traversal.
  
 Tapi, karena ia belum lancer ngoding, ia selalu gagal untuk menghasilkan output yang diinginkan. Bantulah Phan untuk membuat program tersebut 
