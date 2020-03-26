@@ -50,6 +50,7 @@ Ketentuan sesuai yang tertulis di atas ditambah newline.
 | 0.5 seconds | 8 MB |
 
 ![GBM1](img/GBM1.png)
+
 Let's play a game.
 
 Seorang player PUBG membutuhkan bantuan untuk mengetahui apakah aksi berani yang ingin dilakukannya akan membuahkan hasil yang diinginkan. Ia ingin membunuh player lain yang berada di sebuah menara bertangga. Menara tersebut terlihat seperti sebuah TREE. Dia berencana menembak mulai dari tingkat paling bawah dari tempat paling kiri. Anggap kecepatan tembak dan reload hampir tidak ada. Sebagai pengamat, kalian lebih tahu nasib player sembrono tersebut.
@@ -94,7 +95,7 @@ Pada kasus kedua, sembrono menembak 4, namun 7 menembak balik.
 ![GBM3](img/GBM3.jpg)
 
 #### Constraints
-1 ≤ N ≤ 10000 \ 
+1 ≤ N ≤ 10000 \
 1 ≤ A ≤ N \
 0 ≤ M ≤ A \
 1 ≤ Index ≤ 100000
@@ -148,7 +149,7 @@ Constraints
 1 ≤ N ≤ 100 \
 1 ≤ B ≤ 1000
 
-Yamabuki Bakery
+## Yamabuki Bakery
 | Time Limit | Memory Limit |
 |---|---|
 | 1 seconds | 128 MB |
@@ -191,7 +192,7 @@ Tree yang terbentuk adalah
 sehingga untuk level 0 adalah 5500/1 = 5500, level 1 adalah (3000+7000)/2 = 5000, level 2 adalah (2000+4000+6000+8000)/4=5000
 
 #### Constraints
-1 ≤ T ≤ 10 \ 
+1 ≤ T ≤ 10 \
 1 ≤ N ≤ 10000 \
 1 ≤ harga roti ≤ 10000
  
