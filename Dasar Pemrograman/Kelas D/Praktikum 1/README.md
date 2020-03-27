@@ -1,10 +1,10 @@
 # Soal Praktikum 1
 ## Daftar Isi
-- [Area 51](#area-51)
-- [Bakar](#bakar)
-- [Find The Pattern](#find-the-pattern)
-- [Ganjil Genap](#ganjil-genap)
-- [Kampina Ice Cream](#kampina-ice-cream)
+- [Area 51 - AREA51](#area-51)
+- [Bakar - BKR](#bakar)
+- [Find The Pattern - FTP](#find-the-pattern)
+- [Ganjil Genap - GG](#ganjil-genap)
+- [Kampina Ice Cream - KIC](#kampina-ice-cream)
 
 ## Area 51
 | Time Limit | Memory Limit |
