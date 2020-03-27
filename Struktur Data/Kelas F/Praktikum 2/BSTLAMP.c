@@ -1,13 +1,7 @@
-/**
- * Implementasi Binary Search Tree (ADT: BST)
- * yakni BST yang tidak menyimpan key duplikat (unique key)
- *
- * Dibuat dan ditulis oleh Bayu Laksana
- * -- tanggal 29 Februrari 2019
- * Struktur Data 2020
- *
- * Implementasi untuk Bahasa Cl
- */
+/*
+Author : Ahmad Syafiq Aqil Wafi
+NRP : 05111940000089
+*/
 
 #include <stdlib.h>
 #include <stdbool.h>
@@ -38,14 +32,6 @@ typedef struct bst_t {
     BSTNode *_root;
     unsigned int _size;
 } BST;
-
-/**
- * !!! WARNING UTILITY FUNCTION !!!
- * Recognized by prefix "__bst__"
- * ---------------------------------------------
- * Note that you better never access these functions,
- * unless you need to modify or you know how these functions work.
- */
 
 BSTNode* __bst__createNode(int value, int level) {
     if (level > maxLevel) maxLevel = level;
@@ -155,12 +141,6 @@ void __bst__preorder(BSTNode *root) {
     }
 }
 
-/**
- * PRIMARY FUNCTION
- * ---------------------------
- * Accessible and safe to use.
- */
-
 void bst_init(BST *bst) {
     bst->_root = NULL;
     bst->_size = 0u;
@@ -196,13 +176,6 @@ void bst_remove(BST *bst, int value) {
         bst->_size--;
     }
 }
-
-/**
- * Binary search tree traversal
- * - Inorder
- * - Postorder
- * - Preorder
- */
 
 void bst_inorder(BST *bst) {
     __bst__inorder(bst->_root);
