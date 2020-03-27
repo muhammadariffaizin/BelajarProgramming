@@ -1,9 +1,9 @@
 # Soal Praktikum 2 Kelas D
 ## Daftar Isi
-- [Boboiboy Bangkrut](#boboiboy-bangkrut)
-- [Gaboleh Sama](#gaboleh-sama)
-- [Kampina Kombinasi](#kampina-kombinasi)
-- [Sultan Arif](#sultan-arif)
+- [Boboiboy Bangkrut - BB](#boboiboy-bangkrut)
+- [Gaboleh Sama - GBS](#gaboleh-sama)
+- [Kampina Kombinasi - KK](#kampina-kombinasi)
+- [Sultan Arif - SA](#sultan-arif)
 
 ## Boboiboy Bangkrut
 | Time Limit | Memory Limit |
