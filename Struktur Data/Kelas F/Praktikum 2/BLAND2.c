@@ -1,3 +1,7 @@
+/*
+Author : Ahmad Syafiq Aqil Wafi
+NRP : 05111940000089
+*/
 #include <stdio.h>
 #include <math.h>
 
