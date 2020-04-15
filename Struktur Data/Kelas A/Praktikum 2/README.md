@@ -1,4 +1,4 @@
-# Soal Praktikum 1 Kelas A
+# Soal Praktikum 2 Kelas A
 ## Daftar isi
 - [Keluarga Cemara - KC](#keluarga-cemara)
 - [Kotak Wowong - KW](#kotak-wowong)
