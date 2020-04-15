@@ -2,7 +2,7 @@
 ## Daftar isi
 - [Keluarga Cemara - KC](#keluarga-cemara)
 - [Kotak Wowong - KW](#kotak-wowong)
-- [Thanos Belum Komplit - TBK](#thanos-belum-komplit)
+- [Thanos Belum Komplit - MLM](#thanos-belum-komplit)
 - [Ula Males Bikin Soal - UMBS](#ula-males-bikin-soal)
 
 ## Keluarga Cemara
