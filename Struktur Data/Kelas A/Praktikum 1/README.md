@@ -1,9 +1,9 @@
 # Soal Praktikum 1 Kelas A
 ## Daftar isi
-- [Aya Mau Parkir - AMP](#aya-mau-parkir)
+- [Aya Mau Parkir - AYA](#aya-mau-parkir)
 - [Bermain Bersama Wowong - BBW](#bermain-bersama-wowong)
-- [Birds of Prey - BOP](#birds-of-prey)
-- [Ula the King of Duelist - UTKOD](#ula-the-king-of-duelist)
+- [Birds of Prey - BP](#birds-of-prey)
+- [Ula the King of Duelist - UTKD](#ula-the-king-of-duelist)
 
 ## Aya Mau Parkir
 | Time Limit | Memory Limit |
