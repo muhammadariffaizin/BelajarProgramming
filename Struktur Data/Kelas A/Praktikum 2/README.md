@@ -218,7 +218,7 @@ Untuk setiap testcasenya keluarkan hasil cetak secara preorder,inorder dan postO
 #### Explanation
 Pada Testcase 2 jika BST dibangun menggunakan insertion sesuai urutan input maka akan terbentuk BST seperti berikut
 
-![UMBS1](/img/UMBS1.png)
+![UMBS1](img/UMBS1.png)
 
 Didapat hasil Skewed BST,.
 
@@ -238,7 +238,7 @@ Terakhir 9 dimasukan.
 
 sehingga didapat tree seperrti berikut.
 
-![UMBS2](/img/UMBS2.png) 
+![UMBS2](img/UMBS2.png) 
 
 Yang perlu diingat bentuk sebuah BST ditentukan oleh urutan memasukan data yang bisa dilihat pada hasil PreOrder printing.
 
