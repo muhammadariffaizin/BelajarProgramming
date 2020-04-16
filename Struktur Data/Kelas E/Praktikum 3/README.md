@@ -18,8 +18,8 @@ Alex has a chessboard sized n x n. On the board will be put several bishops. In 
 The first line contains two integers n and m which represents the size of board and the number of bishops. The next m lines contains a pair of integer ai and bi represents the position of row and column where the bishops number i is located.
 
 #### Constraints
-1 ≤ m, n ≤ 10<sup>6</sup>
-1 ≤ a<sub>i</sub>, b<sub>i</sub> ≤ 10<sup>6</sup>
+* 1 ≤ m, n ≤ 10<sup>6</sup>
+* 1 ≤ a<sub>i</sub>, b<sub>i</sub> ≤ 10<sup>6</sup>
 
 #### Output Format
 Print the number of squares attacked by the bishops.
@@ -60,9 +60,8 @@ Given a tree, check whether it is a balanced bst or not, using the is_valid func
 The input is handled for you by the code in the editor. So you don't have to worry about it
 
 #### Constraints
-0 ≤ N ≤ 100
-
-0 ≤ val ≤ 2147483647
+* 0 ≤ N ≤ 100
+* 0 ≤ val ≤ 2147483647
 
 #### Output Format
 In the bool is_valid() function, you must return the the value true if the given tree is a balanced bst, or false if it is not.
