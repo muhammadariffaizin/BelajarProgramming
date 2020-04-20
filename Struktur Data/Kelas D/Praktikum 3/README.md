@@ -1,9 +1,9 @@
 # Soal Praktikum 3 Kelas D
 ## Daftar Isi
-- []()
-- []()
-- []()
-- []()
+- [Bukan Budokai Tenkaichi - BBT](#bukan-budokai-tenkaichi)
+- [SIMP! - SIMP](#simp!)
+- [Luzi Suka Berhitung - LSB](#luzi-suka-berhitung)
+- [Maryo Gabut - MG](#maryo-gabut)
 
 ## Bukan Budokai Tenkaichi
 | Time Limit | Memory Limit |
