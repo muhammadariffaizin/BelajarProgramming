@@ -9,6 +9,7 @@
 | Time Limit | Memory Limit |
 |---|:---|
 | 1 seconds	| 8 MB |
+
 Urutkan nomor-nomor yang diinputkan. Outputkan nomor-nomor genap yang diurutkan secara ascending diikuti oleh nomor-nomor ganjil yang diurutkan secara descending. 
 
 #### Input Format 
