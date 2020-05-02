@@ -1,9 +1,9 @@
 # Soal Praktikum 4 Kelas E
 ## Daftar Isi
-- [Baney Language](#baney-language)
-- [Concert Ticket](#concert-ticket)
-- [Dua Indeks](#dua-indeks)
-- [Fight Against Disease](#fight-against-disease)
+- [Baney Language - BL](#baney-language)
+- [Concert Ticket - CT](#concert-ticket)
+- [Dua Indeks - DI](#dua-indeks)
+- [Fight Against Disease - FAD](#fight-against-disease)
 
 ## Baney Language
 | Time Limit | Memory Limit |
