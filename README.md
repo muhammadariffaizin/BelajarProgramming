@@ -59,7 +59,7 @@ Terimakasih banyak telah membantu mengembangkan repository ini.
 | B |  |  |
 | C |  |  |
 | D |  |  |
-| E |  |  |
+| E | <ul><li>[x] [BL]()</li><li>[x] [CT]()</li><li>[x] [DI]()</li><li>[x] [FAD]()</li></ul> | <ul><li>[ ] [BL]()</li><li>[x] [CT]()</li><li>[ ] [DI]()</li><li>[ ] [FAD]()</li></ul> |
 | F |  |  |
 | G |  |  |
 | I |  |  |
