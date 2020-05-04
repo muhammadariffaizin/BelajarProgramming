@@ -42,6 +42,8 @@ z x
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 1 2
 ```
 #### Explanation 0
+![BL](img/BL.jpg)
+
 Pada contoh tersebut huruf dengan panjang 2 yang dapat terbentuk adalah zx, xy, yz, dan xz
 
 ## Concert Ticket
