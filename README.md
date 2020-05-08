@@ -59,7 +59,7 @@ Terimakasih banyak telah membantu mengembangkan repository ini.
 | B |  |  |
 | C |  |  |
 | D |  |  |
-| E | <ul><li>[x] [BL]()</li><li>[x] [CT]()</li><li>[x] [DI]()</li><li>[x] [FAD]()</li></ul> | <ul><li>[ ] [BL]()</li><li>[x] [CT]()</li><li>[ ] [DI]()</li><li>[ ] [FAD]()</li></ul> |
-| F |  |  |
+| E | <ul><li>[x] [BL]()</li><li>[x] [CT]()</li><li>[x] [DI]()</li><li>[x] [FAD]()</li></ul> | <ul><li>[ ] [BL]()</li><li>[x] [CT]()</li><li>[x] [DI]()</li><li>[x] [FAD]()</li></ul> |
+| F | <ul><li>[x] [A]()</li><li>[x] [B]()</li><li>[x] [C]()</li><li>[x] [D]()</li><li>[x] [E]</li><li>[x] [F]</li><li>[x] [G]</li></ul> | <ul><li>[ ] [A]()</li><li>[ ] [B]()</li><li>[ ] [C]()</li><li>[ ] [D]()</li><li>[ ] [E]</li><li>[ ] [F]</li><li>[ ] [G]</li></ul> |
 | G |  |  |
 | I |  |  |
