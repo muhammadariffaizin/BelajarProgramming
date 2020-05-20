@@ -1,11 +1,11 @@
 # Belajar Programming
-Repository ini berisi kumpulan soal dan solusi dari praktikum mata kuliah Dasar Pemrograman dan Struktur Data Teknik Informatika ITS 2019-2020
+Repository ini berisi kumpulan soal dan solusi dari praktikum mata kuliah Dasar Pemrograman dan Struktur Data Teknik Informatika ITS 2019-2020. Tujuan dari repository ini adalah sebagai arsip dan bahan materi dari sesi praktikum Dasar Pemrograman dan Struktur Data.
 
 Silahkan jika ingin : 
 1. Menambahkan soal atau solusi baru
 2. Memperbaiki atau memperbarui soal atau solusi
 3. Menambahkan solusi yang lebih efektif dan efisien
-dapat dilakukan dengan Pull Request di soal atau solusi yang ingin ditambahkan/diubah.
+dapat dilakukan melalui Pull Request di soal atau solusi yang ingin ditambahkan/diubah.
 
 Terimakasih banyak telah membantu mengembangkan repository ini.
 
@@ -15,6 +15,7 @@ Terimakasih banyak telah membantu mengembangkan repository ini.
 - [Praktikum 2 (Modul 2)](#praktikum-2)
 - [Praktikum 3 (Modul 3)](#praktikum-3)
 - [Praktikum 4 (Modul 4 dan 5)](#praktikum-4)
+- [Praktikum Final](#praktikum-final)
 
 ## Praktikum 1
 | Kelas | Soal | Jawaban |
@@ -63,3 +64,8 @@ Terimakasih banyak telah membantu mengembangkan repository ini.
 | F | <ul><li>[x] [A]()</li><li>[x] [B]()</li><li>[x] [C]()</li><li>[x] [D]()</li><li>[x] [E]()</li><li>[x] [F]()</li><li>[x] [G]()</li></ul> | <ul><li>[ ] [A]()</li><li>[ ] [B]()</li><li>[ ] [C]()</li><li>[ ] [D]()</li><li>[ ] [E]()</li><li>[ ] [F]()</li><li>[ ] [G]()</li></ul> |
 | G |  |  |
 | I |  |  |
+
+## Praktikum Final
+| Soal | Jawaban |
+|---|---|
+| <ul><li>[x] [Altitudo Finita Quaerere 0.8](Struktur%20Data/Praktikum%20Final/README.md#altitudo-finita-quaerere-0.8)</li><li>[x] [Bagi Dua](Struktur%20Data/Praktikum%20Final/README.md#bagi-dua)</li><li>[x] [Budak Cinta (Easy)](Struktur%20Data/Praktikum%20Final/README.md#budak-cinta-(easy))</li><li>[x] [Budak Cinta (Hard)](Struktur%20Data/Praktikum%20Final/README.md#budak-cinta-(hard))</li><li>[x] [Crusial Pipe](Struktur%20Data/Praktikum%20Final/README.md#crusial-pipe)</li><li>[x] [Cumulative Time Battle 2.0](Struktur%20Data/Praktikum%20Final/README.md#cumulative-time-battle-2.0)</li><li>[x] [Easy Hex Tree](Struktur%20Data/Praktikum%20Final/README.md#easy-hex-tree)</li><li>[x] [EzUlarTangga](Struktur%20Data/Praktikum%20Final/README.md#ezulartangga)</li><li>[x] [Étude Op. 25, No. 5](Struktur%20Data/Praktikum%20Final/README.md#Étude-Op.-25,-No.-5)</li><li>[x] [Game of Two Stacks](Struktur%20Data/Praktikum%20Final/README.md#game=of=two=stacks)</li><li>[x] [Gubernur Baru](Struktur%20Data/Praktikum%20Final/README.md#gubernur-baru)</li><li>[x] [Hitung Lagi!](Struktur%20Data/Praktikum%20Final/README.md#hitung-lagi!)</li><li>[x] [How Many Islands?](Struktur%20Data/Praktikum%20Final/README.md#how-many-islands)</li><li>[x] [Infix Notation](Struktur%20Data/Praktikum%20Final/README.md#infix-notation)</li><li>[x] [Koyer Final](Struktur%20Data/Praktikum%20Final/README.md#koyer-final)</li><li>[x] [Local Area Network](Struktur%20Data/Praktikum%20Final/README.md#local-area-network)</li><li>[x] [Permutasi](Struktur%20Data/Praktikum%20Final/README.md#permutasi)</li><li>[x] [Pohon](Struktur%20Data/Praktikum%20Final/README.md#pohon)</li><li>[x] [SDITSAVL - AVL Tree](Struktur%20Data/Praktikum%20Final/README.md#sditsavl---avl-tree)</li><li>[x] [Sepatu Penunjuk Arah](Struktur%20Data/Praktikum%20Final/README.md#sepatu-penunjuk-arah)</li><li>[x] [Simple Git](Struktur%20Data/Praktikum%20Final/README.md#simple-git)</li><li>[x] [Tempat Parkir Nadiz](Struktur%20Data/Praktikum%20Final/README.md#tempat-parkir-nadiz)</li><li>[x] [Train of Thought](Struktur%20Data/Praktikum%20Final/README.md#train-of-thought)</li><li>[x] [Vertical Garden](Struktur%20Data/Praktikum%20Final/README.md#vertical-garden)</li></ul> | <ul><li>[x] [Altitudo Finita Quaerere 0.8]()</li><li>[x] [Bagi Dua]()</li><li>[ ] [Budak Cinta (Easy)]()</li><li>[ ] [Budak Cinta (Hard)]()</li><li>[ ] [Crusial Pipe]()</li><li>[ ] [Cumulative Time Battle 2.0]()</li><li>[ ] [Easy Hex Tree]()</li><li>[ ] [EzUlarTangga]()</li><li>[ ] [Étude Op. 25, No. 5]()</li><li>[x] [Game of Two Stacks]()</li><li>[ ] [Gubernur Baru]()</li><li>[x] [Hitung Lagi!]()</li><li>[x] [How Many Islands?]()</li><li>[x] [Infix Notation]()</li><li>[x] [Koyer Final]()</li><li>[ ] [Local Area Network]()</li><li>[ ] [Permutasi]()</li><li>[ ] [Pohon]()</li><li>[x] [SDITSAVL - AVL Tree]()</li><li>[x] [Sepatu Penunjuk Arah]()</li><li>[x] [Simple Git]()</li><li>[x] [Tempat Parkir Nadiz]()</li><li>[x] [Train of Thought]()</li><li>[ ] [Vertical Garden]()</li></ul> |
