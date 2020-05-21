@@ -5,7 +5,11 @@ Silahkan jika ingin :
 1. Menambahkan soal atau solusi baru
 2. Memperbaiki atau memperbarui soal atau solusi
 3. Menambahkan solusi yang lebih efektif dan efisien
-dapat dilakukan melalui Pull Request di soal atau solusi yang ingin ditambahkan/diubah.
+
+dapat dilakukan melalui Pull Request di soal atau solusi yang ingin ditambahkan/diubah. 
+
+Mohon untuk melakukan Pull Request dengan format commit `[Perubahan] - [Praktikum] [Kelas]`.\
+Contoh : `Add Problem - 3 D` atau `Add Solution - Final`.
 
 Terimakasih banyak telah membantu mengembangkan repository ini.
 
