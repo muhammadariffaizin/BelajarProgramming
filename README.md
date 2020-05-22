@@ -13,6 +13,28 @@ Contoh : `Add Problem - 3 D` atau `Add Solution - Final`.
 
 Terimakasih banyak telah membantu mengembangkan repository ini.
 
+## Cara Pull Request
+Untuk melakukan Pull Request, pastikan sudah memiliki akun Github dan telah Login. Berikut langkah untuk melakukan Pull Request :
+1. Lakukan Fork Repository
+Tombol Fork berada di pojok kanan atas, setelah di klik, projek akan otomatis disalin ke akun Github Anda sendiri.
+
+![Fork](img/pull1.png)
+
+2. Tambahkan perubahan di projek Anda sendiri
+Setelah berhasil di fork, silahkan buat perubahan yang ingin Anda tambahkan di projek Anda, bisa membuat file baru, upload, atau merubah file yang telah ada.
+
+![Fork2](img/pull2.png)
+
+3. Submit perubahan agar dapat direview
+Setelah push dilakukan, submit perubahan dengan melalui tombol "Compare & pull request" seperti gambar di bawah.
+
+![Fork3](img/pull3.png)
+
+Anda akan langsung diarahkan ke halaman "Open a pull request" untuk menambahkan judul Pull Request dan deskripsi (opsional), lalu submit dengan "Create a pull request".
+
+4. Tunggu hingga review selesai
+Hasil perubahan Anda akan tampil di repository utama jika telah disetujui oleh pemilik repository.
+
 # Soal dan Solusi Praktikum Seluruh Kelas
 ## Daftar Isi 
 - [Praktikum 1 (Modul 1)](#praktikum-1)
