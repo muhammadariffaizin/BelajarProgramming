@@ -2,7 +2,7 @@
 ## Daftar Isi
 - [Lebaran](#lebaran)
 - [Puzzle 8](#puzzle-8)
-- [Sendal Favorite Geyzki : The Sequel](#sendal-favorite-geyzki-:-the-sequel)
+- [Sendal Favorite Geyzki : The Sequel](#sendal-favorite-geyzki--the-sequel)
 
 ## Lebaran
 Bulan puasa telah tiba dan Egi tidak sabar untuk menyambut idul ﬁtri. Egi sudah merencanakan untuk berkunjung ke rumah setiap saudaranya. Namun Egi memiliki kendala yaitu dia tidak mempunyai banyak uang dan itu membuat rumah yang bisa dikunjunginya terbatas. Oleh karena itu , Egi ingin mengadakan acara keluarga pada salah satu rumah saudaranya daripada mengunjungi satu persatu rumah setiap saudara.
