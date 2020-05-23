@@ -82,10 +82,10 @@ Hasil perubahan Anda akan tampil di repository utama jika telah disetujui oleh p
 ## Praktikum 4
 | Kelas | Soal | Jawaban |
 |---|---|---|
-| A | <ul><li>[x] [Altitudo Finita Quaerere](Struktur%20Data/Kelas%20A/Praktikum%204/README.md#altitudo-finita-quaerere)</li><li>[x] [Berkeliling Perumahan Syeky](Struktur%20Data/Kelas%20A/Praktikum%204/README.md#berkeliling-perumahan-syeky)</li><li>[x] [Flow Free](Struktur%20Data/Kelas%20A/Praktikum%204/README.md#flow-free)</li><li>[x] [Jarak Terjauh](Struktur%20Data/Kelas%20A/Praktikum%204/README.md#jarak-terjauh)</li></ul> | <ul><li>[ ] [Altitudo Finita Quaerere]()</li><li>[x] [Berkeliling Perumahan Syeky]()</li><li>[x] [Flow Free]()</li><li>[x] [Jarak Terjauh]()</li></ul> |
+| A |  |  |
 | B |  |  |
 | C |  |  |
-| D |  |  |
+| D | <ul><li>[x] [Altitudo Finita Quaerere](Struktur%20Data/Kelas%20D/Praktikum%204/README.md#altitudo-finita-quaerere)</li><li>[x] [Berkeliling Perumahan Syeky](Struktur%20Data/Kelas%20D/Praktikum%204/README.md#berkeliling-perumahan-syeky)</li><li>[x] [Flow Free](Struktur%20Data/Kelas%20D/Praktikum%204/README.md#flow-free)</li><li>[x] [Jarak Terjauh](Struktur%20Data/Kelas%20D/Praktikum%204/README.md#jarak-terjauh)</li></ul> | <ul><li>[ ] [Altitudo Finita Quaerere]()</li><li>[x] [Berkeliling Perumahan Syeky]()</li><li>[x] [Flow Free]()</li><li>[x] [Jarak Terjauh]()</li></ul> |
 | E | <ul><li>[x] [BL]()</li><li>[x] [CT]()</li><li>[x] [DI]()</li><li>[x] [FAD]()</li></ul> | <ul><li>[ ] [BL]()</li><li>[x] [CT]()</li><li>[x] [DI]()</li><li>[x] [FAD]()</li></ul> |
 | F | <ul><li>[x] [A]()</li><li>[x] [B]()</li><li>[x] [C]()</li><li>[x] [D]()</li><li>[x] [E]()</li><li>[x] [F]()</li><li>[x] [G]()</li></ul> | <ul><li>[ ] [A]()</li><li>[ ] [B]()</li><li>[x] [C]()</li><li>[x] [D]()</li><li>[ ] [E]()</li><li>[x] [F]()</li><li>[ ] [G]()</li></ul> |
 | G | <ul><li>[x] [Lebaran](Struktur%20Data/Kelas%20G/Praktikum%204/README.md#lebaran)</li><li>[x] [Puzzle 8](Struktur%20Data/Kelas%20G/Praktikum%204/README.md#puzzle-8)</li><li>[x] [Sendal Favorite Geyzki : The Sequel](Struktur%20Data/Kelas%20G/Praktikum%204/README.md#sendal-favorite-geyzki-:-the-sequel)</li></ul> | <ul><li>[x] [Lebaran]()</li><li>[x] [Puzzle 8]()</li><li>[x] [Sendal Favorite Geyzki : The Sequel]()</li></ul> |
