@@ -1,4 +1,4 @@
-# Soal Praktikum 4 Kelas A
+# Soal Praktikum 4 Kelas D
 ## Daftar Isi
 - [Altitudo Finita Quaerere](#altitudo-finita-quaerere)
 - [Berkeliling Perumahan Syeky](#berkeliling-perumahan-syeky)
